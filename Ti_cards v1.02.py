@@ -148,7 +148,7 @@ fm = tk.Menu(m, tearoff=0)
 m.add_cascade(label="File", menu=fm)
 fm.add_command(label="Open...", command=_open)
 fm.add_command(label="Save...", state= 'disabled', command=_save)
-hm = Menu(m, tearoff=0) #второй пункт меню
+hm = Menu(m, tearoff=0) 
 m.add_cascade(label="?", menu=hm)
 hm.add_command(label="About", command=menu_about)
 label1 = Label(root)
@@ -163,8 +163,6 @@ button1.pack(side=LEFT)
 button3 = tk.Button(bg="red", text="->\nnext", height=50, width=7,command=add_position)
 button3.pack(side=RIGHT)
 
-# scrollbar = Scrollbar(root, orient=HORIZONTAL)
-# scrollbar.pack(side=BOTTOM, fill=X)
 button4 = tk.Button(bg="yellow",text="don't show/ скрыть", command=_hide)
 button4.pack(side=BOTTOM, fill=X)
 
